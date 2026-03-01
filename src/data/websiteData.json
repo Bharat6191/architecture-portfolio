@@ -1,0 +1,370 @@
+{
+  "global": {
+    "companyNamePrefix": "Pendelton",
+    "companyNameSuffix": "Arc.",
+    "location": "120 Architectural Way, NY",
+    "addressFull": "120 Architectural Way \\n New York, NY 10012",
+    "email": "studio@geometry.arc",
+    "emailContact": "INFO@PENDELTON.ARC",
+    "phone": "+1 (800) 555-0199",
+    "businessHours": "Mon - Fri // 09:00 - 18:00 \\n Sat - Sun // Closed",
+    "manifesto": "Engineering the intersection between human ambition and geometric perfection. We build legacies that define tomorrow's skyline.",
+    "socials": [
+      {
+        "name": "Instagram",
+        "url": "https://instagram.com"
+      },
+      {
+        "name": "Twitter",
+        "url": "https://twitter.com"
+      },
+      {
+        "name": "Facebook",
+        "url": "https://facebook.com"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://linkedin.com"
+      }
+    ]
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Portfolio",
+        "href": "#projects"
+      },
+      {
+        "label": "Studio",
+        "href": "#studio"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ],
+    "menuLinks": [
+      {
+        "number": "01",
+        "subtitle": "Selected Works",
+        "title": "Portfolio",
+        "href": "#projects"
+      },
+      {
+        "number": "02",
+        "subtitle": "Our Philosophy",
+        "title": "The Studio",
+        "href": "#studio"
+      },
+      {
+        "number": "03",
+        "subtitle": "Connect",
+        "title": "Contact",
+        "href": "#contact"
+      }
+    ]
+  },
+  "hero": {
+    "titleLine1": "Designing",
+    "titleLine2": "Spaces",
+    "titleLine3": "That Breathe.",
+    "subtitle": "Parametric Drafting. <br/> Geometry. Precision."
+  },
+  "vision": {
+    "tagline": "The Vision",
+    "title": "Architecture Is The Masterly, Correct And Magnificent Play Of Masses Brought Together In Light.",
+    "subtitle": "Le Corbusier // Thesis"
+  },
+  "about": {
+    "tagline": "Philosophy",
+    "titleLine1": "Drafting Reality",
+    "titleLine2": "From",
+    "titleHighlight": "Blueprint Dreams.",
+    "description": "We believe architecture is more than just spatial planning. It’s the precise calculation of light, shadow, and geometry. Every line drawn is an intersection between human experience and structural integrity.",
+    "stats": [
+      {
+        "value": "15+",
+        "label": "Years Experience"
+      },
+      {
+        "value": "120",
+        "label": "Projects Executed"
+      }
+    ]
+  },
+  "aboutUs": {
+    "founderImg": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
+    "founderRole": "Principal Architect",
+    "founderName": "Arthur Pendelton",
+    "founderMark": "AR-P // FOUNDER EST. 2009",
+    "tagline": "The Firm",
+    "titleLine1": "We Build",
+    "titleHighlight": "Legacies.",
+    "descriptionParagraphs": [
+      "Founded in 2009 by Arthur Pendelton, our firm was established on a singular, unwavering principle: architecture is the physical manifestation of human ambition. We do not just design homes; we engineer living art.",
+      "Over the past 15 years, we have transitioned from intimate residential drafting to dominating the commercial skyline. From the conceptual layout phase to the final titanium fixture, our multidisciplinary team of structural engineers, interior specialists, and visionary architects oversee every mathematical millimeter."
+    ],
+    "stats": [
+      {
+        "value": "35+",
+        "suffix": "",
+        "label": "Industry Awards"
+      },
+      {
+        "value": "120",
+        "suffix": "m²",
+        "label": "Largest Build Array"
+      },
+      {
+        "value": "24",
+        "suffix": "",
+        "label": "Global Engineers"
+      }
+    ]
+  },
+  "highRise": {
+    "tagline": "Engineering Excellence",
+    "titleLine1": "Structural Integrity—",
+    "titleHighlight": "Engineering Longevity.",
+    "description": "We design high-rise structures built to defy time and gravity. Our engineering philosophy roots itself in unshakeable deep foundations and resilient exoskeleton frameworks."
+  },
+  "vastu": {
+    "tagline": "Cosmic Alignment",
+    "titleLine1": "Vastu Shastra",
+    "titleHighlight": "Integration",
+    "description": "A truly breathing space must harmonize with the cosmos. We meticulously apply Vastu Shastra principles—aligning structures with natural elements, cardinal directions, and energy flow to cultivate balance, prosperity, and peace.",
+    "features": "Spatial Geometry • Energy Flow • Elemental Balance"
+  },
+  "projects": {
+    "tagline": "Portfolio",
+    "titleLine1": "Architectural",
+    "titleHighlight": "Visions.",
+    "viewAllText": "View All Projects",
+    "collapseText": "Collapse Grid",
+    "items": [
+      {
+        "title": "Villa Horizon",
+        "category": "Residential Concept",
+        "year": "2024"
+      },
+      {
+        "title": "The Apex Tower",
+        "category": "Commercial Structure",
+        "year": "2025"
+      },
+      {
+        "title": "Zenith Pavilion",
+        "category": "Public Space",
+        "year": "2023"
+      },
+      {
+        "title": "Echo Residence",
+        "category": "Luxury Minimal",
+        "year": "2026"
+      },
+      {
+        "title": "Lumina Gallery",
+        "category": "Museum Design",
+        "year": "2024"
+      },
+      {
+        "title": "Oasis Highrise",
+        "category": "Sustainable Living",
+        "year": "2027"
+      },
+      {
+        "title": "Nexus Bridge",
+        "category": "Urban Infrastructure",
+        "year": "2025"
+      },
+      {
+        "title": "Aether Sanctuary",
+        "category": "Wellness Retreat",
+        "year": "2023"
+      }
+    ]
+  },
+  "imageGallery": {
+    "tagline": "Visual Documentation",
+    "titleLine1": "Project",
+    "titleHighlight": "Gallery",
+    "description": "A curated collection of captured moments, showcasing the exquisite material finishes, structural precision, and architectural light interplay across our completed builds.",
+    "viewMoreText": "View More Images",
+    "collapseText": "Collapse Images",
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=800&auto=format&fit=crop",
+        "title": "Villa Horizon Exterior"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=800&auto=format&fit=crop",
+        "title": "Zenith Interior"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop",
+        "title": "Echo Residence"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1613490908571-9ce224a04fc9?q=80&w=800&auto=format&fit=crop",
+        "title": "The Apex Tower Lobby"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1600566753086-00f18efc2291?q=80&w=800&auto=format&fit=crop",
+        "title": "Aether Sanctuary Bath"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop",
+        "title": "Lumina Gallery Facade"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=800&auto=format&fit=crop",
+        "title": "Urban Infrastructure"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800&auto=format&fit=crop",
+        "title": "Modern Minimalist Flat"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
+        "title": "Glass Corporate Building"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop",
+        "title": "Industrial Office Space"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=800&auto=format&fit=crop",
+        "title": "Geometric Light Court"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1524813686514-a57563d77965?q=80&w=800&auto=format&fit=crop",
+        "title": "Spiral Concrete Setup"
+      }
+    ]
+  },
+  "spatialExperiments": {
+    "tagline": "Modular Composition",
+    "titleLine1": "Dismantle &",
+    "titleHighlight": "Connect",
+    "description": "Hover to inspect layer-by-layer architectural composition. Every wall, pillar, and slab is designed for unified structural harmony."
+  },
+  "process": {
+    "tagline": "Methodology",
+    "titleLine1": "The",
+    "titleHighlight": "Process.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Conceptual Layout",
+        "description": "Defining the spatial hierarchy and volumetric geometry of the environment."
+      },
+      {
+        "number": "02",
+        "title": "Parametric Design",
+        "description": "Using algorithms to calculate optimal sunlight entry, wind resistance, and structural integrity."
+      },
+      {
+        "number": "03",
+        "title": "Material Selection",
+        "description": "Curating high-performance material overlays—from raw concrete to brushed titanium."
+      },
+      {
+        "number": "04",
+        "title": "Execution",
+        "description": "Bridging the gap between the blueprint and the physical build structure."
+      }
+    ]
+  },
+  "testimonials": {
+    "tagline": "Clientele",
+    "titleLine1": "Voices Of",
+    "titleHighlight": "Trust.",
+    "items": [
+      {
+        "name": "Elena Rostova",
+        "role": "CEO, Horizon Developments",
+        "text": "Their approach to spatial geometry is unmatched. The villa they designed feels like a living, breathing entity."
+      },
+      {
+        "name": "Marcus Chen",
+        "role": "Director, Apex Towers",
+        "text": "Precision engineered to perfection. The high-rise exoskeleton is not just structural, it is a piece of art in the skyline."
+      },
+      {
+        "name": "Sarah Jenkins",
+        "role": "Founder, Lumina Arts",
+        "text": "They captured the exact light intersection we needed. The museum geometry guides visitors organically through the space."
+      }
+    ]
+  },
+  "awards": {
+    "tagline": "Recognition",
+    "titleLine1": "Industry",
+    "titleHighlight": "Accolades.",
+    "items": [
+      {
+        "year": "2024",
+        "title": "Pritzker Excellence Nomination",
+        "category": "Global Architectural Design"
+      },
+      {
+        "year": "2023",
+        "title": "AIA Gold Medal Finalist",
+        "category": "Sustainable High-Rise Engineering"
+      },
+      {
+        "year": "2022",
+        "title": "RIBA International Prize",
+        "category": "Urban Infrastructure Innovation"
+      },
+      {
+        "year": "2020",
+        "title": "Architecture MasterPrize",
+        "category": "Minimalist Residential Interior"
+      }
+    ]
+  },
+  "futureProjects": {
+    "tagline": "The Future",
+    "titleLine1": "Unbuilt",
+    "titleHighlight": "Visions.",
+    "description": "Welcome to the incubator. Sneak peaks at conceptual geometries, parametric megastructures, and deep-space architectural drafting currently in the calculation phase.",
+    "features": [
+      "Parametric Algorithms",
+      "Structural Physics",
+      "Topology Optimization"
+    ],
+    "hologramTitle": "Project: NEO-BABYLON",
+    "hologramProperties": [
+      {
+        "label": "SCALE",
+        "value": "MEGACITY"
+      },
+      {
+        "label": "STATUS",
+        "value": "SIMULATING..."
+      },
+      {
+        "label": "ZONES",
+        "value": "14 VERTICAL"
+      }
+    ]
+  },
+  "contact": {
+    "tagline": "Initiate Project",
+    "titleLine1": "Let's Build",
+    "titleHighlight": "Tomorrow.",
+    "description": "Open a dialogue with our lead architects. We design for longevity, precision, and geometric perfection.",
+    "formLabelName": "YOUR NAME",
+    "formLabelEmail": "EMAIL ADDRESS",
+    "formLabelBrief": "PROJECT BRIEF",
+    "formSubmitText": "Send Proposal"
+  },
+  "footer": {
+    "socialsHeader": "Connect With Us",
+    "locationHeader": "Location",
+    "contactHeader": "Contact",
+    "businessHoursHeader": "Business Hours",
+    "copyright": "Pendelton Architecture.\\nAll Rights Reserved."
+  }
+}
