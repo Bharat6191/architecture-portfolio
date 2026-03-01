@@ -1,4 +1,5 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import localData from '../data/websiteData.json';
@@ -7,6 +8,32 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
   const formRef = useRef();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    // Replace these with your actual EmailJS credentials
+    // You can sign up at https://www.emailjs.com/
+    const serviceID = 'service_4ggxnec';
+    const templateID = 'template_5inrx7u';
+    const publicKey = 'v5xagu6Y-oK8B9t27';
+
+    emailjs.sendForm(serviceID, templateID, formRef.current, publicKey)
+      .then((result) => {
+          setIsSubmitting(false);
+          setSubmitStatus('success');
+          formRef.current.reset(); // Clear form
+          setTimeout(() => setSubmitStatus(null), 5000);
+      }, (error) => {
+          setIsSubmitting(false);
+          setSubmitStatus('error');
+          setTimeout(() => setSubmitStatus(null), 5000);
+      });
+  };
 
   useEffect(() => {
     // Line draw effect on form borders
@@ -57,12 +84,14 @@ const Contact = () => {
 
       {/* Right side form */}
       <div className="w-full md:w-1/2 flex flex-col justify-center z-10">
-        <form ref={formRef} onSubmit={(e) => e.preventDefault()} className="bg-[#0f0f0f] border border-white/5 p-6 sm:p-8 md:p-12 w-full max-w-xl mx-auto md:mr-0 flex flex-col gap-8 shadow-2xl">
+        <form ref={formRef} onSubmit={sendEmail} className="bg-[#0f0f0f] border border-white/5 p-6 sm:p-8 md:p-12 w-full max-w-xl mx-auto md:mr-0 flex flex-col gap-8 shadow-2xl">
           
           <div className="relative">
             <input 
               type="text" 
+              name="user_name"
               placeholder={localData.contact.formLabelName} 
+              required
               className="w-full bg-transparent text-white font-light text-base uppercase tracking-widest placeholder-gray-600 focus:outline-none focus:text-[#d4af37] py-2 border-b border-white/20 focus:border-[#d4af37] transition-colors duration-300"
             />
             {/* Animated Bottom Border */}
@@ -74,7 +103,9 @@ const Contact = () => {
           <div className="relative">
             <input 
               type="email" 
+              name="user_email"
               placeholder={localData.contact.formLabelEmail} 
+              required
               className="w-full bg-transparent text-white font-light text-sm uppercase tracking-widest placeholder-gray-600 focus:outline-none focus:text-[#d4af37] py-2"
             />
             <div className="draw-line absolute bottom-0 left-0 w-full h-[1px] bg-white/20 origin-left"></div>
@@ -84,24 +115,39 @@ const Contact = () => {
           <div className="relative">
             <input 
               type="text" 
+              name="message"
               placeholder={localData.contact.formLabelBrief} 
+              required
               className="w-full bg-transparent text-white font-light text-sm uppercase tracking-widest placeholder-gray-600 focus:outline-none focus:text-[#d4af37] py-2"
             />
             <div className="draw-line absolute bottom-0 left-0 w-full h-[1px] bg-white/20 origin-left"></div>
             <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#d4af37] transition-all duration-300 peer-focus:w-full"></div>
           </div>
 
-          <button className="draw-line mt-8 flex items-center justify-center gap-4 py-4 px-8 border border-white/20 hover:border-[#d4af37] text-white hover:text-[#d4af37] text-sm uppercase tracking-widest font-bold transition-all duration-500 w-max group origin-center">
-            {localData.contact.formSubmitText}
-            <svg 
-              className="w-5 h-5 translate-x-0 group-hover:translate-x-2 transition-transform duration-500" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-            </svg>
+          <button 
+            type="submit"
+            disabled={isSubmitting}
+            className="draw-line mt-8 flex items-center justify-center gap-4 py-4 px-8 border border-white/20 hover:border-[#d4af37] text-white hover:text-[#d4af37] text-sm uppercase tracking-widest font-bold transition-all duration-500 w-max group origin-center disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {isSubmitting ? 'Transmitting...' : localData.contact.formSubmitText}
+            {!isSubmitting && (
+              <svg 
+                className="w-5 h-5 translate-x-0 group-hover:translate-x-2 transition-transform duration-500" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+              </svg>
+            )}
           </button>
+          
+          {submitStatus === 'success' && (
+            <p className="text-[#d4af37] text-xs tracking-widest uppercase font-bold text-center">Protocol Received. We will contact you shortly.</p>
+          )}
+          {submitStatus === 'error' && (
+            <p className="text-red-500 text-xs tracking-widest uppercase font-bold text-center">Transmission Failed. Please check console or try again.</p>
+          )}
         </form>
       </div>
 
