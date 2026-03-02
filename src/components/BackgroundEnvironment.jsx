@@ -107,7 +107,7 @@ const BackgroundEnvironment = () => {
     <div className="fixed inset-0 z-0 pointer-events-none bg-black">
       <Canvas 
         dpr={[1, 1.5]} 
-        gl={{ powerPreference: 'high-performance', antialias: false }} 
+        gl={{ powerPreference: 'default', alpha: true, antialias: false }} 
         camera={{ position: [0, 2, 10], fov: 60 }}
       >
         {/* Soft fog depth effect */}

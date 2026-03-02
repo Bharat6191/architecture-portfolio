@@ -122,7 +122,7 @@ const Hero = ({ isReady }) => {
       >
         <Canvas 
           dpr={[1, 1.5]} 
-          gl={{ powerPreference: 'high-performance' }}
+          gl={{ powerPreference: 'default', alpha: true, antialias: false }}
         >
           <PerspectiveCamera makeDefault position={[0, 4, 10]} fov={-45} />
           <PerspectiveCamera makeDefault position={[0, 3, 10]} fov={40} />

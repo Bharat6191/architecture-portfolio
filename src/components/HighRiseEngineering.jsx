@@ -72,7 +72,7 @@ const HighRiseEngineering = () => {
       >
         <Canvas 
           dpr={[1, 1.5]} 
-          gl={{ powerPreference: 'high-performance' }} 
+          gl={{ powerPreference: 'default', alpha: true, antialias: false }} 
           camera={{ position: [0, 4, 12], fov: 45 }}
         >
           <ambientLight intensity={0.5} />

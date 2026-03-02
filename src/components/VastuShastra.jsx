@@ -86,7 +86,7 @@ const VastuShastra = () => {
       >
         <Canvas 
           dpr={[1, 1.5]} 
-          gl={{ powerPreference: 'high-performance' }} 
+          gl={{ powerPreference: 'default', alpha: true, antialias: false }} 
           camera={{ position: [0, 5, 10], fov: 45 }}
         >
           <ambientLight intensity={0.5} />
