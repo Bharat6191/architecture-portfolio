@@ -91,7 +91,7 @@ const Navbar = ({ isReady }) => {
       {/* Full Screen Architectural Menu Modal */}
       <div 
         ref={menuRef} 
-        className="fixed left-0 w-full h-screen bg-[#050505]/95 backdrop-blur-xl z-40 flex flex-col justify-center items-center pointer-events-auto border-b border-[#d4af37]/20 opacity-0"
+        className="fixed left-0 w-full h-screen bg-black/95 backdrop-blur-xl z-40 flex flex-col justify-center items-center pointer-events-auto border-b border-[#d4af37]/20 opacity-0"
         style={{ top: '-100vh' }}
       >
         <div className="absolute inset-0 z-0 pointer-events-none opacity-10">

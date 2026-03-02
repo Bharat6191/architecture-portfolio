@@ -151,7 +151,7 @@ const SpatialExperiments = () => {
   const [active, setActive] = useState(false);
 
   return (
-    <section className="relative w-full h-[80vh] min-h-[600px] bg-[#050505] border-t border-white/5 overflow-hidden z-10 flex items-center justify-center">
+    <section className="relative w-full h-[80vh] min-h-[600px] bg-black border-t border-white/5 overflow-hidden z-10 flex items-center justify-center">
       
       <div 
         className="absolute inset-0 z-0 cursor-crosshair"
@@ -172,7 +172,7 @@ const SpatialExperiments = () => {
         </Canvas>
       </div>
 
-      <div className="absolute bottom-16 md:bottom-20 z-10 w-full px-4 sm:px-6 flex flex-col items-center pointer-events-none mix-blend-difference">
+      <div className="absolute bottom-16 md:bottom-20 z-10 w-full px-4 sm:px-6 flex flex-col items-center pointer-events-none lg:mix-blend-difference">
         <h2 className="text-sm tracking-[0.4em] text-[#d4af37] uppercase font-bold mb-4">{localData.spatialExperiments.tagline}</h2>
         <h3 className="text-3xl sm:text-4xl md:text-5xl font-light text-white uppercase text-center max-w-2xl">
           {localData.spatialExperiments.titleLine1} <span className="font-bold">{localData.spatialExperiments.titleHighlight}</span>

@@ -3,7 +3,7 @@ import localData from '../data/websiteData.json';
 
 const Footer = () => {
   return (
-    <footer className="relative w-full bg-[#050505] border-t border-white/10 pt-16 md:pt-24 pb-12 px-4 sm:px-6 lg:px-24 z-10 overflow-hidden">
+    <footer className="relative w-full bg-black border-t border-white/10 pt-16 md:pt-24 pb-12 px-4 sm:px-6 lg:px-24 z-10 overflow-hidden">
       
       {/* Top Section */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-16 gap-8 md:gap-0">

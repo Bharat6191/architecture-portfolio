@@ -31,7 +31,7 @@ const ImageGallery = () => {
   const displayedImages = showAll ? images : images.slice(0, 6);
 
   return (
-    <section ref={sectionRef} className="relative w-full py-16 md:py-24 px-4 sm:px-6 lg:px-24 bg-[#050505] border-t border-white/5 z-10">
+    <section ref={sectionRef} className="relative w-full py-16 md:py-24 px-4 sm:px-6 lg:px-24 bg-black border-t border-white/5 z-10">
       
       <div className="flex flex-col md:flex-row justify-between md:items-end mb-12 border-b border-white/10 pb-8">
         <div>
@@ -58,7 +58,7 @@ const ImageGallery = () => {
               className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105 filter grayscale-[50%] group-hover:grayscale-0"
             />
             {/* Dark Overlay that reveals on hover */}
-            <div className="absolute inset-0 bg-[#050505]/60 group-hover:bg-[#050505]/20 transition-colors duration-500"></div>
+            <div className="absolute inset-0 bg-black/60 group-hover:bg-black/20 transition-colors duration-500"></div>
             
             {/* Title Overlay */}
             <div className="absolute bottom-6 left-6 right-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out">

@@ -90,7 +90,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="relative w-full py-16 md:py-32 px-4 sm:px-6 lg:px-24 border-t border-white/5 bg-[#050505] z-10">
+    <section className="relative w-full py-16 md:py-32 px-4 sm:px-6 lg:px-24 border-t border-white/5 bg-black z-10">
       
       <div className="text-center mb-16 md:mb-24 relative z-10 w-full flex flex-col items-center">
         <h2 className="text-sm tracking-[0.4em] text-[#d4af37] uppercase font-bold mb-4">{localData.testimonials.tagline}</h2>

@@ -53,7 +53,7 @@ const WalkthroughModal = ({ project, onClose }) => {
   };
 
   return (
-    <div ref={modalRef} className="fixed inset-0 z-[200] bg-[#050505] flex flex-col items-center justify-center backdrop-blur-3xl">
+    <div ref={modalRef} className="fixed inset-0 z-[200] bg-black flex flex-col items-center justify-center backdrop-blur-3xl">
       <button 
         onClick={handleClose}
         className="absolute top-8 right-8 z-[210] text-white uppercase text-xs tracking-[0.3em] font-bold hover:text-[#d4af37] transition-colors flex items-center justify-center w-12 h-12 bg-white/5 rounded-full border border-white/10 hover:border-[#d4af37]/50"
@@ -61,7 +61,7 @@ const WalkthroughModal = ({ project, onClose }) => {
         <span className="mb-[2px]">X</span>
       </button>
 
-      <div className="absolute top-8 left-8 z-[210] pointer-events-none mix-blend-difference">
+      <div className="absolute top-8 left-8 z-[210] pointer-events-none lg:mix-blend-difference">
          <p className="text-[#d4af37] text-xs uppercase tracking-[0.3em] font-bold">{project.category}</p>
          <h2 className="text-3xl sm:text-4xl md:text-7xl font-light text-white uppercase mt-2 tracking-tighter">{project.title}</h2>
          <p className="text-gray-400 text-xs font-mono mt-4 border-l border-[#d4af37] pl-3">DRAG TO ORBIT • SCROLL TO ZOOM</p>
@@ -101,7 +101,7 @@ const ProjectCard = ({ title, category, year, onClick }) => {
     <div 
       ref={cardRef}
       onClick={onClick}
-      className="relative group w-full h-[350px] md:h-[450px] border border-white/10 bg-[#050505]/40 backdrop-blur-md overflow-hidden flex flex-col justify-end p-6 md:p-8 cursor-pointer transition-all duration-700 hover:border-[#d4af37]/50 mt-8"
+      className="relative group w-full h-[350px] md:h-[450px] border border-white/10 bg-black/40 backdrop-blur-md overflow-hidden flex flex-col justify-end p-6 md:p-8 cursor-pointer transition-all duration-700 hover:border-[#d4af37]/50 mt-8"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >

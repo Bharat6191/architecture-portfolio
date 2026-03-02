@@ -50,7 +50,7 @@ const AboutUs = () => {
           <div className="relative w-full max-w-[400px] aspect-[4/5] group">
             <div className="absolute -inset-4 border border-[#d4af37]/30 transform translate-x-4 translate-y-4 founder-border origin-bottom z-0"></div>
             
-            <div className="relative z-10 w-full h-full overflow-hidden bg-[#050505]">
+            <div className="relative z-10 w-full h-full overflow-hidden bg-black">
               <img 
                 src={localData.aboutUs.founderImg} 
                 alt={localData.aboutUs.founderRole} 

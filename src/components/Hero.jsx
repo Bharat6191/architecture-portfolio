@@ -145,7 +145,7 @@ const Hero = ({ isReady }) => {
       </div>
 
       {/* Typography Overlay */}
-      <div ref={titleRef} className="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-start gap-2 md:gap-4 pointer-events-none mix-blend-difference mt-20 md:mt-0">
+      <div ref={titleRef} className="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-start gap-2 md:gap-4 pointer-events-none lg:mix-blend-difference mt-20 md:mt-0">
         <h1 className="opacity-0 text-4xl sm:text-5xl md:text-7xl lg:text-[100px] font-black uppercase tracking-tighter leading-[0.9] text-white">
           {localData.hero.titleLine1}
         </h1>

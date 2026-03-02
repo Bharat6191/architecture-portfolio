@@ -47,7 +47,7 @@ const AwardItem = ({ year, title, body }) => {
 
 const Awards = () => {
   return (
-    <section className="w-full py-16 md:py-32 px-4 sm:px-6 lg:px-24 bg-[#050505] z-10 border-t border-white/5 relative">
+    <section className="w-full py-16 md:py-32 px-4 sm:px-6 lg:px-24 bg-black z-10 border-t border-white/5 relative">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         
         <h2 className="text-sm tracking-[0.4em] text-[#d4af37] uppercase font-bold mb-4">{localData.awards.tagline}</h2>

@@ -54,7 +54,7 @@ const LoadingScreen = ({ onFinish }) => {
   }, [onFinish]);
 
   return (
-    <div ref={containerRef} className="fixed inset-0 z-[100] bg-[#050505] flex items-center justify-center overflow-hidden">
+    <div ref={containerRef} className="fixed inset-0 z-[100] bg-black flex items-center justify-center overflow-hidden">
       
       {/* Blueprint Drawing Effects */}
       <div className="absolute inset-0 z-0 flex items-center justify-center opacity-30">
