@@ -104,7 +104,7 @@ const CursorLight = () => {
 
 const BackgroundEnvironment = () => {
   return (
-    <div className="fixed inset-0 z-0 pointer-events-none bg-[#050505]">
+    <div className="fixed inset-0 z-0 pointer-events-none bg-black">
       <Canvas 
         dpr={[1, 1.5]} 
         gl={{ powerPreference: 'high-performance', antialias: false }} 
