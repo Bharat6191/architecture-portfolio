@@ -25,7 +25,7 @@ function App() {
 
   return (
     <ReactLenis root options={{ lerp: 0.1, smoothWheel: true }}>
-      <div className="relative w-full bg-[#050505] text-white selection:bg-[#d4af37] selection:text-black font-sans">
+      <div className="relative w-full min-h-screen bg-[#050505] text-white selection:bg-[#d4af37] selection:text-black font-sans">
         {loading && <LoadingScreen onFinish={() => setLoading(false)} />}
         
         <BackgroundEnvironment />

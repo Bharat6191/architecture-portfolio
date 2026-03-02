@@ -9,13 +9,14 @@
 }
 
 @layer base {
-  body {
+  html, body {
     background-color: var(--color-matte);
     color: white;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     font-family: var(--font-inter);
+    color-scheme: dark;
     /* Custom architectural grid background */
     background-image:
       linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
